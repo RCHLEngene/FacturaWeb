@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRARME"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                app:srcCompat="@mipmap/register" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="40dp"
+                android:text="Nombre(s) y Apellido(s)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNom"
+                android:layout_width="300dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="Omar Beleño"
+                android:textColorHint="#45DFDFDF"
+                android:inputType="textPersonName"
+                />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="24dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="Tipo de documento"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spDoc"
+                android:layout_width="300dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="30dp"
+                android:text="Número de documento"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDoc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:ems="10"
+                android:hint="Ej: 1067590890"
+                android:textColorHint="#45DFDFDF"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="300dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="24dp"
+                android:layout_height="wrap_content"
+                android:text="Dinero a depositar"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etSaldoN"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:digits="1234567890"
+                android:ems="10"
+                android:hint="ej: 250000"
+                android:textColorHint="#45DFDFDF"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="24dp"
+                android:text="Contraseña"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassW"
+                android:layout_width="300dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="24dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ej: 12345678"
+                android:textColorHint="#45DFDFDF"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="30dp"
+                android:text="Confirme la contraseña"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPassWCon"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="ej: 12345678"
+                android:textColorHint="#45DFDFDF"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="145dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:text="Registrarme" />
+
+            <Button
+                android:id="@+id/btnSalir1"
+                android:layout_width="100dp"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-50dp"
+                android:layout_height="wrap_content"
+                android:text="Salir" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
